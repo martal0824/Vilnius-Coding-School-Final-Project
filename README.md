@@ -1,17 +1,19 @@
 # Vilnius-Coding-School-Final-Project
-MySQL portfolio project: complete restaurant database with schema, SQL queries (joins, group by, subqueries, case/if) and a Jupyter Notebook with Pandas analysis &amp; visualizations. 
+MySQL portfolio project: complete restaurant database with schema, SQL queries (joins, group by, subqueries, case/if), a Jupyter Notebook with Pandas analysis & visualizations, and an interactive Power BI dashboard.
 
 [![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)](https://www.python.org/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql)](https://www.mysql.com/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)](https://jupyter.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Analysis-green?logo=pandas)](https://pandas.pydata.org/)
+[![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-yellow?logo=powerbi)](https://powerbi.microsoft.com/)
 
 ## Description
-This project simulates a restaurant management system and demonstrates analytical queries in two ways:
+This project simulates a restaurant management system and demonstrates analytical queries in three ways:
 - **SQL** – executed directly in MySQL
 - **Pandas** – reproducing the same logic in Python (using joins, groupby, and aggregations)
+- **Power BI** – interactive data visualization and dashboard creation
 
-The project includes: database schema, seed data with realistic customers, visits, orders, and dishes, analytical SQL queries with comments, a Jupyter Notebook with Python/Pandas implementations, visualizations created with Matplotlib, and an EER diagram of the database.
+The project includes: database schema, seed data, analytical SQL queries with comments, a Jupyter Notebook with Python/Pandas implementations, visualizations created with Matplotlib, and an interactive Power BI report.
 
 ---
 
@@ -37,6 +39,7 @@ This project enables the following business and analytical insights:
 Each functionality is implemented in both:
 - **SQL** (using `JOIN`, `GROUP BY`, `HAVING`, `CASE/IF`, subqueries, etc.)
 - **Pandas** (using `merge`, `groupby`, `agg`, conditional columns, etc.)
+- **Power BI** (interactive visuals, filters, slicers)
 
 ---
 
@@ -45,8 +48,10 @@ Each functionality is implemented in both:
 - **Seed data** with realistic customers, orders, and dishes (`Seeds/Seed.sql`)
 - **15 analytical SQL queries** (`Queries/`) with clear comments
 - **Jupyter Notebook** (`Notebooks/Restaurant_SQL_vs_Pandas.ipynb`):
-  - Runs the same analysis via SQL and Pandas
-  - Includes **data visualizations** (Matplotlib)
+  - Same analysis in SQL & Pandas
+  - Matplotlib-based data visualizations
+- **Power BI Dashboard** (`PowerBI/Restaurant_Dashboard.pbix`):
+  - Interactive report with filters, drill-downs & KPIs
 - **EER diagram** of the database (`Schema/EER.png`)
 
 ---
@@ -74,6 +79,7 @@ Steps to set up and run:
    jupyter notebook ./Notebooks/Restaurant_SQL_vs_Pandas.ipynb
    ```
 3. Run the cells to execute SQL queries and compare results with Pandas.
+4. Open PowerBI/Restaurant_Dashboard.pbix in Power BI Desktop for interactive analytics.
 
 ---
 
@@ -96,7 +102,19 @@ Revenue by gender and loyalty:
 
 ![Revenue by gender and loyalty](Notebooks/Images/revenue_by_gender_loyalty.png)
 
+**Power BI Dashboard Preview**
 
+Revenue by dish type: 
+
+![Revenue by dish type](PowerBI/Images/revenue_by_dish_type.png)
+
+Customers view:
+
+![Customers view](PowerBI/Images/customers_view.png)
+
+Time overview:
+
+![Time overview](PowerBI/Images/time_overview.png)
 ---
 
 ## Project Structure
@@ -106,11 +124,10 @@ Vilnius-Coding-School-Final-Project/
 │── Seeds/        # Seed data
 │── Queries/      # Analytical SQL queries
 │── Notebooks/    # Jupyter Notebook (SQL + Pandas + Visualizations)
+│── PowerBI/      # Power BI Dashboard + Images
 │── README.md
 ```
-
 ---
-
 ## EER Diagram
 To better understand the database design:
 
@@ -121,19 +138,18 @@ To better understand the database design:
 ## Notes
 - Tested on **Python 3.13.5**
 - Works with **MySQL 8.0+**
-- Dependencies: `mysql-connector-python`, `pandas`, `matplotlib`, `numpy`
+- Dependencies: mysql-connector-python, pandas, matplotlib, numpy, powerbi-desktop
 
 ---
 
 ## License
 This project is licensed under the [MIT License](./LICENSE).
 
-
 ---
 
 ## Author
 Created as a **final project** for Vilnius Coding School.  
-Developed by **Martynas Talmontas** as part of SQL/Python data analysis learning path. 
+Developed by **Martynas Talmontas** as part of SQL/Python/Power BI data analysis learning path. 
 
 ---
 
